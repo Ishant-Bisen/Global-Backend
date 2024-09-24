@@ -1,6 +1,5 @@
 const nodemailer = require("nodemailer")
-const sendVerificationEmail = async (email,verificationToken, OTP) => {
-    console.log("verification template me aa raha ahai");
+const sendVerificationEmail = async (email,OTP) => {
     let emailTransporter = nodemailer.createTransport({
         service:"gmail",
         auth: {

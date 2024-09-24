@@ -6,7 +6,7 @@ const UserOtpVerificationSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    uniqueId:{
+    token:{
         type: String,
         required: true,
         unique: true
@@ -24,4 +24,4 @@ const UserOtpVerificationSchema = new mongoose.Schema({
         type: Date
     }
 })
-module.exports = mongoose.model("UserOtpVerificationSchema" , UserOtpVerificationSchema)
+module.exports = mongoose.model("UserOtpVerificationSchemaModel" , UserOtpVerificationSchema)
